@@ -1,0 +1,920 @@
+0;0;1;Table A:  entry;CCITT IA5;0;0;24
+0;0;2;Table A:  data category description, line 1;CCITT IA5;0;0;256
+0;0;3;Table A:  data category description, line 2;CCITT IA5;0;0;256
+0;0;5;BUFR/CREX edition number;CCITT IA5;0;0;24
+0;0;10;F descriptor to be added or defined;CCITT IA5;0;0;8
+0;0;11;X descriptor to be added or defined;CCITT IA5;0;0;16
+0;0;12;Y descriptor to be added or defined;CCITT IA5;0;0;24
+0;0;13;Element name, line 1;CCITT IA5;0;0;256
+0;0;14;Element name, line 2;CCITT IA5;0;0;256
+0;0;15;Units name;CCITT IA5;0;0;192
+0;0;16;Units scale sign;CCITT IA5;0;0;8
+0;0;17;Units scale;CCITT IA5;0;0;24
+0;0;18;Units reference sign;CCITT IA5;0;0;8
+0;0;19;Units reference value;CCITT IA5;0;0;80
+0;0;20;Element data width;CCITT IA5;0;0;24
+0;0;30;Descriptor defining sequence;CCITT IA5;0;0;48
+0;1;1;WMO block number;Numeric;0;0;7
+0;1;2;WMO station number;Numeric;0;0;10
+0;1;3;WMO Region number/geographical area;Code table;0;0;3
+0;1;4;WMO Region sub-area (see Note 9);Numeric;0;0;3
+0;1;5;Buoy/platform identifier;Numeric;0;0;17
+0;1;6;Aircraft flight number;CCITT IA5;0;0;64
+0;1;7;Satellite identifier;Code table;0;0;10
+0;1;8;Aircraft registration number or other identification;CCITT IA5;0;0;64
+0;1;9;Type of commercial aircraft;CCITT IA5;0;0;64
+0;1;10;Stationary buoy platform identifier e.g. C-MAN buoys;CCITT IA5;0;0;64
+0;1;11;Ship or mobile land station identifier;CCITT IA5;0;0;72
+0;1;12;Direction of motion of moving observing platform**;Degree true;0;0;9
+0;1;13;Speed of motion of moving observing platform*(;m s-1;0;0;10
+0;1;14;Platform drift speed (high precision);m s-1;2;0;10
+0;1;15;Station or site name;CCITT IA5;0;0;160
+0;1;18;Short station or site name;CCITT IA5;0;0;40
+0;1;19;Long Station or site name;CCITT IA5;0;0;256
+0;1;20;WMO Region sub-area;Numeric;0;0;4
+0;1;21;Synoptic feature identifier;Numeric;0;0;14
+0;1;22;Name of feature (see Note 11);CCITT IA5;0;0;224
+0;1;23;Observation sequence number;Numeric;0;0;9
+0;1;25;Storm identifier;CCITT IA5;0;0;24
+0;1;26;WMO storm name1;CCITT IA5;0;0;64
+0;1;27;WMO long storm name;CCITT IA5;0;0;80
+0;1;31;Identification of originating/generating centre (see Note 10);Code table;0;0;16
+0;1;32;Generating application;Code table defined by originating/ generating centre  (Notes (3), (4) and (5));0;0;8
+0;1;33;Identification of originating/generating centre;Common Code Table C-1;0;0;8
+0;1;34;Identification of originating/generating sub-centre;Common Code Table C-12;0;0;8
+0;1;35;Originating Centre;Common Code Table C-11;0;0;16
+0;1;36;Agency in charge of operating the Observing platform;Code table;0;0;20
+0;1;41;Absolute platform velocity - first component (see Note 6);m s-1;5;-1073741824;31
+0;1;42;Absolute platform velocity - second component (see Note 6);m s-1;5;-1073741824;31
+0;1;43;Absolute platform velocity - third component (see Note 6);m s-1;5;-1073741824;31
+0;1;50;Platform transmitter ID number;Numeric;0;0;17
+0;1;51;Platform transmitter ID number;CCITT IA5;0;0;96
+0;1;60;Aircraft reporting point (Beacon identifier);CCITT IA5;0;0;64
+0;1;62;Short ICAO location indicator;CCITT IA5;0;0;32
+0;1;63;ICAO location indicator;CCITT IA5;0;0;64
+0;1;64;Runway designator;CCITT IA5;0;0;32
+0;1;75;Tide station identification;CCITT IA5;0;0;40
+0;1;80;Ship line number according to SOOP;CCITT IA5;0;0;32
+0;1;81;Radiosonde serial number;CCITT IA5;0;0;160
+0;1;82;Radiosonde ascension number (see Note 12);Numeric;0;0;14
+0;1;83;Radiosonde release number (see Note 12);Numeric;0;0;3
+0;1;85;Observing platform manufacturer's model;CCITT IA5;0;0;160
+0;1;86;Observing platform manufacturer's serial number;CCITT IA5;0;0;256
+0;1;90; Technique for making up initial perturbations;Code table;0;0;8
+0;1;91;Ensemble member number;Numeric;0;0;10
+0;1;92;Type of ensemble forecast;Code table;0;0;8
+0;1;93;Balloon lot number;CCITT IA5;0;0;96
+0;1;94;WBAN Number;Numeric;0;0;17
+0;1;95;Observer identification;CCITT IA5;0;0;32
+0;2;1;Type of station;Code table;0;0;2
+0;2;2;Type of instrumentation for wind measurement;Flag table;0;0;4
+0;2;3;Type of measuring equipment used;Code table;0;0;4
+0;2;4;Type of instrumentation for evaporation measurement or type of crop for which evapotranspiration is reported;Code table;0;0;4
+0;2;5;Precision of temperature observation;K;2;0;7
+0;2;11;Radiosonde type;Code table;0;0;8
+0;2;12;Radiosonde computational method;Code table;0;0;4
+0;2;13;Solar and infrared radiation correction;Code table;0;0;4
+0;2;14;Tracking technique/status of system used;Code table;0;0;7
+0;2;15;Radiosonde completeness;Code table;0;0;4
+0;2;16;Radiosonde configuration;Flag table;0;0;5
+0;2;19;Satellite instruments;Code table;0;0;11
+0;2;20;Satellite classification;Code table;0;0;9
+0;2;21;Satellite instrument data used in processing*;Flag table;0;0;9
+0;2;22;Satellite data-processing technique used;Flag table;0;0;8
+0;2;23;Satellite derived wind computation method;Code table;0;0;4
+0;2;24;Integrated mean humidity computational method;Code table;0;0;4
+0;2;25;Satellite channel(s) used in computation;Flag table;0;0;25
+0;2;26;Cross track resolution;m;2;0;12
+0;2;27;Along track resolution;m;2;0;12
+0;2;28;Segment size at nadir in X direction;m;0;0;18
+0;2;29;Segment size at nadir in Y direction;m;0;0;18
+0;2;30;Method of current measurement;Code table;0;0;3
+0;2;31;Duration and time of current measurement;Code table;0;0;5
+0;2;32;Indicator for digitization;Code table;0;0;2
+0;2;33;Method of salinity/depth measurement;Code table;0;0;3
+0;2;34;Drogue type;Code table;0;0;5
+0;2;35;Cable length;m;0;0;9
+0;2;36;Buoy type;Code table;0;0;2
+0;2;37;Method of tidal observation;Code table;0;0;3
+0;2;38;Method of water temperature and/or salinity measurement;Code table;0;0;4
+0;2;39;Method of wet-bulb temperature measurement;Code table;0;0;3
+0;2;40;Method of removing velocity and motion of platform from current;Code table;0;0;4
+0;2;41;Method for estimating reports related to synoptic features;Code table;0;0;6
+0;2;44;Indicator for method of calculating spectral wave data;Code table;0;0;4
+0;2;45;Indicator for type of platform;Code table;0;0;4
+0;2;46;Wave measurement instrumentation;Code table;0;0;4
+0;2;48;Satellite sensor indicator;Code table;0;0;4
+0;2;49;Geostationary satellite data-processing technique used;Flag table;0;0;8
+0;2;50;Geostationary sounder satellite channels used;Flag table;0;0;20
+0;2;51;Indicator to specify observing method for extreme temperatures;Code table;0;0;4
+0;2;52;Geostationary imager satellite channels used;Flag table;0;0;6
+0;2;53;GOES-I/M brightness temperature characteristics;Code table;0;0;4
+0;2;54;GOES-I/M soundings parameter characteristics;Code table;0;0;4
+0;2;55;Geostationary soundings statistical parameters;Code table;0;0;4
+0;2;56;Geostationary soundings accuracy statistics;Code table;0;0;4
+0;2;57;Origin of first guess information for GOES-I/M soundings;Code table;0;0;4
+0;2;58;Valid times of first guess information for GOES-I/M soundings;Code table;0;0;4
+0;2;59;Origin of analysis information for GOES-I/M soundings;Code table;0;0;4
+0;2;60;Origin of surface information for GOES-I/M soundings;Code table;0;0;4
+0;2;61;Aircraft navigational system;Code table;0;0;3
+0;2;62;Type of aircraft data relay system;Code table;0;0;4
+0;2;63;Aircraft roll angle;Degree;2;-18000;16
+0;2;64;Aircraft roll angle quality;Code table;0;0;2
+0;2;65;ACARS ground receiving station;CCITT IA5;0;0;40
+0;2;66;Radiosonde ground receiving system;Code table;0;0;6
+0;2;67;Radiosonde operating frequency;Hz;-5;0;15
+0;2;70;Original specification of latitude/longitude;Code table;0;0;4
+0;2;80;Balloon manufacturer;Code table;0;0;6
+0;2;81;Type of balloon;Code table;0;0;5
+0;2;82;Weight of balloon;kg;3;0;12
+0;2;83;Type of balloon shelter;Code table;0;0;4
+0;2;84;Type of gas used in balloon;Code table;0;0;4
+0;2;85;Amount of gas used in balloon;kg;3;0;13
+0;2;86;Balloon flight train length;m;1;0;10
+0;2;91;Entry sensor 4/20 mA;A;4;0;10
+0;2;95;Type of pressure sensor;Code table;0;0;5
+0;2;96;Type of temperature sensor;Code table;0;0;5
+0;2;97;Type of humidity sensor;Code table;0;0;5
+0;2;100;Radar constantN;dB;1;0;12
+0;2;101;Type of antenna;Code table;0;0;4
+0;2;102;Antenna height above tower base;m;0;0;8
+0;2;103;Radome;Flag table;0;0;2
+0;2;104;Antenna polarisation;Code table;0;0;4
+0;2;105;Maximum antenna gain;dB;0;0;6
+0;2;106;3-dB beamwidth;Degree;1;0;6
+0;2;107;Sidelobe suppression;dB;0;0;6
+0;2;108;Crosspol discrimination (on axis);dB;0;0;6
+0;2;109;Antenna speed (azimuth);Degree s-1;2;0;12
+0;2;110;Antenna speed (elevation);Degree s-1;2;0;12
+0;2;111;Radar incidence angle;Degree;1;0;10
+0;2;112;Radar look angle;Degree;1;0;12
+0;2;113;Number of azimuth looks;Numeric;0;0;4
+0;2;114;Antenna effective surface area;m2;0;0;15
+0;2;115;Type of surface observing equipment;Code table;0;0;5
+0;2;121;Mean frequency;Hz;-8;0;7
+0;2;122;Frequency agility range;Hz;-6;-128;8
+0;2;123;Peak power;W;-4;0;7
+0;2;124;Average power;W;-1;0;7
+0;2;125;Pulse repetition frequency;Hz;-1;0;8
+0;2;126;Pulse width;s;7;0;6
+0;2;127;Receiver intermediate frequency;Hz;-6;0;7
+0;2;128;Intermediate frequency bandwidth;Hz;-5;0;6
+0;2;129;Minimum detectable signal;dB;0;-150;5
+0;2;130;Dynamic range;dB;0;0;7
+0;2;131;Sensitivity time control (STC);Flag table;0;0;2
+0;2;132;Azimuth pointing accuracy;Degree;2;0;6
+0;2;133;Elevation pointing accuracy;Degree;2;0;6
+0;2;134;Antenna beam azimuth;Degree;2;0;16
+0;2;135;Antenna elevation;Degree;2;-9000;15
+0;2;136;Range processed by range attenuation correction;m;-3;0;16
+0;2;140;Satellite radar beam azimuth angle;Degree;0;0;9
+0;2;141;Measurement type;CCITT IA5;0;0;24
+0;2;142;Ozone instrument serial number/ identification;CCITT IA5;0;0;32
+0;2;143;Ozone instrument type;Code table;0;0;7
+0;2;144;Light source type for Brewer spectro photometer;Code table;0;0;4
+0;2;145;Wave length setting for Dobson instruments;Code table;0;0;4
+0;2;146;Source conditions for Dobson instruments;Code table;0;0;4
+0;2;148;Data collection and/or location system;Code table;0;0;5
+0;2;149;Type of data buoy;Code table;0;0;6
+0;2;150;TOVS/ATOVS/AVHRR instrumentation channel number;Code table;0;0;6
+0;2;151;Radiometer identifier;Code table;0;0;11
+0;2;152;Satellite instrument used in data processing(6);Flag table;0;0;31
+0;2;153;Satellite channel centre frequency;Hz;-8;0;26
+0;2;154;Satellite channel band width;Hz;-8;0;26
+0;2;163;Height assignment method;Code table;0;0;4
+0;2;164;Tracer correlation method;Code table;0;0;3
+0;2;166;Radiance type;Code table;0;0;4
+0;2;167;Radiance computational method;Code table;0;0;4
+0;2;168;Hydrostatic pressure of lower end of cable (thermistor string);Pa;-3;0;16
+0;2;169;Anemometer type;Code table;0;0;4
+0;2;172;Product type for retrieved atmospheric gases;Code table;0;0;8
+0;2;173;Square of the off nadir angle (7);Degree2;4;0;10
+0;2;175;Method of precipitation measurement;Code table;0;0;4
+0;2;176;Method of state of ground measurement;Code table;0;0;4
+0;2;177;Method of snow depth measurement;Code table;0;0;4
+0;2;178;Method of liquid content measurement of precipitation;Code table;0;0;4
+0;2;179;Type of sky condition algorithm;Code table;0;0;4
+0;2;180;Main present weather detecting system;Code table;0;0;4
+0;2;181;Supplementary present weather sensor;Flag table;0;0;21
+0;2;182;Visibility measurement system;Code table;0;0;4
+0;2;183;Cloud detection system;Code table;0;0;4
+0;2;184;Type of lightning detection sensor;Code table;0;0;4
+0;2;185;Method of evaporation measurement;Code table;0;0;4
+0;2;186;Capability to detect precipitation phenomena;Flag table;0;0;30
+0;2;187;Capability to detect other weather phenomena;Flag table;0;0;18
+0;2;188;Capability to detect obscuration;Flag table;0;0;21
+0;2;189;Capability to discriminate lightning strikes;Flag table;0;0;12
+0;2;190;Lagrangian drifter submergence (% time submerged);%;0;0;7
+0;4;1;Year;Year;0;0;12
+0;4;2;Month;Month;0;0;4
+0;4;3;Day;Day;0;0;6
+0;4;4;Hour;Hour;0;0;5
+0;4;5;Minute;Minute;0;0;6
+0;4;6;Second;Second;0;0;6
+0;4;7;Seconds within a minute (microsecond accuracy);Second;6;0;26
+0;4;11;Time increment;Year;0;-1024;11
+0;4;12;Time increment;Month;0;-1024;11
+0;4;13;Time increment;Day;0;-1024;11
+0;4;14;Time increment;Hour;0;-1024;11
+0;4;15;Time increment;Minute;0;-2048;12
+0;4;16;Time increment;Second;0;-4096;13
+0;4;17;Reference time period for accumulated or extreme data;Minute;0;-1440;12
+0;4;21;Time period or displacement;Year;0;-1024;11
+0;4;22;Time period or displacement;Month;0;-1024;11
+0;4;23;Time period or displacement;Day;0;-1024;11
+0;4;24;Time period or displacement;Hour;0;-2048;12
+0;4;25;Time period or displacement;Minute;0;-2048;12
+0;4;26;Time period or displacement;Second;0;-4096;13
+0;4;31;Duration of time relating to following value;Hour;0;0;8
+0;4;32;Duration of time relating to following value;Minute;0;0;6
+0;4;41;Time difference, UTC -LMT (see Note 6);Minute;0;-1440;12
+0;4;43;Day of the year;Day;0;0;9
+0;4;51;Principal time of daily reading of maximum temperature;Hour;0;0;5
+0;4;52;Principal time of daily reading of minimum temperature;Hour;0;0;5
+0;4;53;Number of days with precipitation equal to or more than 1 mm;Numeric;0;0;6
+0;4;59;Times of observation used to compute the reported mean values;Flag table;0;0;6
+0;4;65;Short time increment;Minute;0;-128;8
+0;4;73;Short time period or displacement;Day;0;-128;8
+0;4;74;Short time period or displacement;Hour;0;-128;8
+0;4;75;Short time period or displacement;Minute;0;-128;8
+0;5;1;Latitude (high accuracy);Degree;5;-9000000;25
+0;5;2;Latitude (coarse accuracy);Degree;2;-9000;15
+0;5;11;Latitude increment (high accuracy);Degree;5;-9000000;25
+0;5;12;Latitude increment (coarse accuracy);Degree;2;-9000;15
+0;5;21;Bearing or azimuth;Degree true;2;0;16
+0;5;22;Solar azimuth;Degree true;2;0;16
+0;5;30;Direction (spectral);Degree;0;0;12
+0;5;31;Row number;Numeric;0;0;12
+0;5;33;Pixel size on horizontal - 1;m;-1;0;16
+0;5;34;Along track row number;Numeric;0;0;11
+0;5;36;Ship transect number according to SOOP;Numeric;0;0;7
+0;5;40;Orbit number;Numeric;0;0;24
+0;5;41;Scan line number;Numeric;0;0;8
+0;5;42;Channel number;Numeric;0;0;6
+0;5;43;Field of view number;Numeric;0;0;8
+0;5;44;Satellite cycle number;Numeric;0;0;11
+0;5;52;Channel number increment;Numeric;0;0;5
+0;5;53;Field of view number increment;Numeric;0;0;5
+0;6;1;Longitude (high accuracy);Degree;5;-18000000;26
+0;6;2;Longitude (coarse accuracy);Degree;2;-18000;16
+0;6;11;Longitude increment (high accuracy);Degree;5;-18000000;26
+0;6;12;Longitude increment (coarse accuracy);Degree;2;-18000;16
+0;6;21;Distance;m;-1;0;13
+0;6;30;Wave number (spectral);rad m-1;5;0;13
+0;6;31;Column number;Numeric;0;0;12
+0;6;33;Pixel size on horizontal - 2;m;-1;0;16
+0;6;34;Cross-track cell number;Numeric;0;0;7
+0;6;40;Radius of confidence;m;0;0;13
+0;7;1;Height of station (see Note 1);m;0;-400;15
+0;7;2;Height or altitude;m;-1;-40;16
+0;7;3;Geopotential;m2 s-2;-1;-400;17
+0;7;4;Pressure;Pa;-1;0;14
+0;7;5;Height increment;m;0;-400;12
+0;7;6;Height above station;m;0;0;15
+0;7;7;Height;m;0;-1000;17
+0;7;8;Geopotential;m2 s-2;0;-10000;20
+0;7;9;Geopotential height;gpm;0;-1000;17
+0;7;10;Flight level;m;0;-1024;16
+0;7;21;Elevation (see Note 2);Degree;2;-9000;15
+0;7;22;Solar elevation;Degree;2;-9000;15
+0;7;24;Satellite zenith angle;Degree;2;-9000;15
+0;7;25;Solar zenith angle;Degree;2;-9000;15
+0;7;30;Height of station ground above mean sea level (see Note 3);m;1;- 4000;17
+0;7;31;Height of barometer above mean sea level (see Note 4);m;1;- 4000;17
+0;7;32;Height of sensor above local ground (or deck of marine platform) (see Note 5);m;2;0;16
+0;7;33;Height of sensor above water surface (see Note 6);m;1;0;12
+0;7;61;Depth below land surface;m;2;0;14
+0;7;62;Depth below sea/water surface;m;1;0;17
+0;7;64;Height above station (sensor height artificially corrected) (see Note 7);m;0;0;4
+0;7;70;Drogue depth;m;0;0;10
+0;8;1;Vertical sounding significance;Flag table;0;0;7
+0;8;2;Vertical significance (surface observations);Code table;0;0;6
+0;8;3;Vertical significance (satellite observations);Code table;0;0;6
+0;8;4;Phase of aircraft flight;Code table;0;0;3
+0;8;5;Meteorological attribute significance;Code table;0;0;4
+0;8;6;Ozone vertical sounding significance;Flag table;0;0;9
+0;8;7;Dimensional significance;Code table;0;0;4
+0;8;8;Radiation vertical sounding significance;Flag table;0;0;9
+0;8;9;Detailed phase of flight;Code Table;0;0;4
+0;8;10;Surface qualifier (temperature data);Code table;0;0;5
+0;8;11;Meteorological feature;Code table;0;0;6
+0;8;12;Land/sea qualifier;Code table;0;0;2
+0;8;13;Day/night qualifier;Code table;0;0;2
+0;8;14;Qualifier for runway visual range;Code table;0;0;4
+0;8;16;Change qualifier of a trend-type forecast or an aerodrome forecast;Code table;0;0;3
+0;8;17;Qualifier of the time when the forecast change is expected;Code table;0;0;2
+0;8;18;SEAWINDS land/ice surface type;Flag table;0;0;17
+0;8;20;Total number of missing entities (with respect to accumulation or average);Numeric;0;0;16
+0;8;21;Time significance;Code table;0;0;5
+0;8;22;Total number (with respect to accumulation or average);Numeric;0;0;16
+0;8;23;First order statistics;Code table;0;0;6
+0;8;24;Difference statistics;Code table;0;0;6
+0;8;25;Time difference qualifier;Code table;0;0;4
+0;8;29;Remotely sensed surface type;Code table;0;0;8
+0;8;30;Manual on Codes (Volume I.1, Section C) Code table from which data are derived;Numeric;0;0;13
+0;8;31;Data category CREX table A;Numeric;0;0;8
+0;8;33;Method of derivation of percentage confidence;Code table;0;0;7
+0;8;35;Type of monitoring exercise;Code table;0;0;3
+0;8;36;Type of centre or station performing monitoring;Code table;0;0;3
+0;8;40;Flight Level significance;Code table;0;0;6
+0;8;41;Data significance;Code table;0;0;5
+0;8;50;Qualifier for number of missing values in calculation of statistic;Code table;0;0;4
+0;8;51;Qualifier for number of missing values in calculation of statistic;Code table;0;0;3
+0;8;52;Condition for which number of days of occurrence follows;Code table;0;0;5
+0;8;53;Day of occurrence qualifier;Code table;0;0;2
+0;8;60;Sample scanning mode significance;Code table;0;0;4
+0;8;70;TOVS/ATOVS product qualifier;Code table;0;0;4
+0;8;72;Pixel(s) type;Code table;0;0;3
+0;8;74;Altimeter echo type;Code table;0;0;2
+0;8;75;Ascending/Descending Orbit Qualifier;Code table;0;0;2
+0;8;76;Type of band;Code table;0;0;6
+0;8;80;Qualifier for GTSPP quality flag;Code table;0;0;6
+0;10;1;Height of land surface;m;0;-400;15
+0;10;2;Height;m;-1;-40;16
+0;10;3;Geopotential;m2 s-2;-1;-400;17
+0;10;4;Pressure;Pa;-1;0;14
+0;10;7;Height;m;0;-1000;17
+0;10;8;Geopotential;m2 s-2;0;-10000;20
+0;10;9;Geopotential height;gpm;0;-1000;17
+0;10;10;Minimum pressure reduced to mean sea level;Pa;-1;0;14
+0;10;11;Maximum pressure reduced to mean sea level;Pa;-1;0;14
+0;10;31;In direction of the North Pole, distance from the Earth's centre;m;2;-1073741824;31
+0;10;40;Number of retrieved layers;Numeric;0;0;10
+0;10;50;Standard deviation altitude;m;2;0;16
+0;10;51;Pressure reduced to mean sea level;Pa;-1;0;14
+0;10;52;Altimeter setting (QNH);Pa;-1;0;14
+0;10;60;Pressure change;Pa;-1;-1024;11
+0;10;61;3-hour pressure change;Pa;-1;-500;10
+0;10;62;24-hour pressure change;Pa;-1;-1000;11
+0;10;63;Characteristic of pressure tendency;Code table;0;0;4
+0;10;70;Indicated aircraft altitude;m;0;-400;16
+0;11;1;Wind direction;Degree true;0;0;9
+0;11;2;Wind speed;m s-1;1;0;12
+0;11;3;u-component;m s-1;1;-4096;13
+0;11;4;v-component;m s-1;1;-4096;13
+0;11;5;w-component;Pa s-1;1;-512;10
+0;11;6;w-component;m s-1;2;-4096;13
+0;11;10;Wind direction associated with wind speed which follows;Degree true;0;0;9
+0;11;11;Wind direction at 10 m;Degree true;0;0;9
+0;11;12;Wind speed at 10 m;m s-1;1;0;12
+0;11;13;Wind direction at 5 m;Degree true;0;0;9
+0;11;14;Wind speed at 5 m;m s-1;1;0;12
+0;11;16;Extreme counterclockwise wind direction of a variable wind;Degree true;0;0;9
+0;11;17;Extreme clockwise wind direction of a variable wind;Degree true;0;0;9
+0;11;19;Steadiness of wind (6);%;0;0;7
+0;11;21;Relative vorticity;s-1;9;-65536;17
+0;11;22;Divergence;s-1;9;-65536;17
+0;11;23;Velocity potential;m2 s-1;-2;-65536;17
+0;11;31;Degree of turbulence;Code table;0;0;4
+0;11;32;Height of base of turbulence;m;-1;-40;16
+0;11;33;Height of top of turbulence;m;-1;-40;16
+0;11;34;Vertical gust velocity;m s-1;1;-1024;11
+0;11;35;Vertical gust acceleration;m s-2;2;-8192;14
+0;11;36;Maximum derived equivalent vertical gust speed;m s-1;1;0;10
+0;11;37;Turbulence Index;Code table;0;0;6
+0;11;38;Time of occurrence of Peak Eddy Dissipation Rate;Code table;0;0;5
+0;11;39;Extended time of occurrence of peak  Eddy Dissipation Rate;Code table;0;0;6
+0;11;40;Maximum wind speed (mean wind);m s-1;1;0;12
+0;11;41;Maximum wind gust speed;m s-1;1;0;12
+0;11;42;Maximum wind speed (10-min mean wind);m s-1;1;0;12
+0;11;43;Maximum wind gust direction;Degree true;0;0;9
+0;11;44;Mean wind direction for surface - 1500 m (5000 feet);Degree true;0;0;9
+0;11;45;Mean wind speed for surface - 1500 m (5000 feet);m s-1;1;0;12
+0;11;46;Maximum instantaneous wind speed;m s-1;1;0;12
+0;11;47;Maximum instantaneous wind speed over 10 minutes;m s-1;1;0;12
+0;11;49;Standard deviation of wind direction;Degree true;0;0;9
+0;11;50;Standard deviation of horizontal wind speed;m s-1;1;0;12
+0;11;51;Standard deviation of vertical wind speed;m s-1;1;0;8
+0;11;52;Formal uncertainty in wind speed;m s-1;2;0;13
+0;11;53;Formal uncertainty in wind direction;Degree true;2;0;15
+0;11;61;Absolute wind shear in 1 km layer below;m s-1;1;0;12
+0;11;62;Absolute wind shear in 1 km layer above;m s-1;1;0;12
+0;11;70;Designator of the runway affected by wind shear (including ALL);CCITT IA5;0;0;32
+0;11;71;Turbulent vertical momentum flux;m2 s-2;3;-128;14
+0;11;72;Turbulent vertical buoyancy flux;K m s-1;3;-128;11
+0;11;73;Turbulent kinetic energy;m2 s-2;2;-1024;13
+0;11;74;Dissipation energy;m2 s-2;2;-1024;10
+0;11;75;Mean turbulence intensity (eddy dissipation rate);m2/3 s-1;2;0;8
+0;11;76;Peak turbulence intensity (eddy dissipation rate);m2/3 s-1;2;0;8
+0;11;77;Reporting interval or averaging time for Eddy Dissipation Rate;s;0;0;12
+0;11;81;Model wind direction at 10m;Degree true;2;0;16
+0;11;82;Model wind speed at 10m;m s-1;2;0;14
+0;12;1;Temperature/dry-bulb temperature;K;1;0;12
+0;12;2;Wet-bulb temperature;K;1;0;12
+0;12;3;Dew-point temperature;K;1;0;12
+0;12;4;Dry-bulb temperature at 2 m;K;1;0;12
+0;12;5;Wet-bulb temperature at 2 m;K;1;0;12
+0;12;6;Dew-point temperature at 2 m;K;1;0;12
+0;12;7;Virtual temperature;K;1;0;12
+0;12;11;Maximum temperature, at height and over period specified;K;1;0;12
+0;12;12;Minimum temperature, at height and over period specified;K;1;0;12
+0;12;13;Ground minimum temperature, past 12 hours;K;1;0;12
+0;12;14;Maximum temperature at 2 m, past 12 hours;K;1;0;12
+0;12;15;Minimum temperature at 2 m, past 12 hours;K;1;0;12
+0;12;16;Maximum temperature at 2 m, past 24 hours;K;1;0;12
+0;12;17;Minimum temperature at 2 m, past 24 hours;K;1;0;12
+0;12;21;Maximum temperature at 2m;K;2;0;16
+0;12;22;Minimum temperature at 2m;K;2;0;16
+0;12;30;Soil temperature;K;1;0;12
+0;12;51;Standard deviation temperature;K;1;0;10
+0;12;52;Highest daily mean temperature;K;1;0;12
+0;12;53;Lowest daily mean temperature;K;1;0;12
+0;12;61;Skin temperature;K;1;0;12
+0;12;62;Equivalent black body temperature;K;1;0;12
+0;12;63;Brightness temperature;K;1;0;12
+0;12;64;Instrument temperature;K;1;0;12
+0;12;65;Standard deviation brightness temperature;K;1;0;12
+0;12;70;Warm load temperature;K;2;0;16
+0;12;71;Coldest cluster temperature;K;1;0;12
+0;12;72;Radiance;W m-2 sr-1;6;0;31
+0;12;75;Spectral radiance;W m-3 sr-1;-3;0;16
+0;12;76;Radiance;W m-2 sr-1;3;0;16
+0;12;101;Temperature/dry-bulb temperature;K;2;0;16
+0;12;102;Wet-bulb temperature;K;2;0;16
+0;12;103;Dew-point temperature;K;2;0;16
+0;12;104;Dry-bulb temperature at 2m;K;2;0;16
+0;12;105;Web-bulb temperature at 2m;K;2;0;16
+0;12;106;Dew-point temperature at 2m;K;2;0;16
+0;12;107;Virtual temperature;K;2;0;16
+0;12;111;Maximum temperature, at height and over period specified;K;2;0;16
+0;12;112;Minimum temperature, at height and over period specified;K;2;0;16
+0;12;113;Ground minimum temperature, past 12 hours;K;2;0;16
+0;12;114;Maximum temperature at 2m, past 12 hours;K;2;0;16
+0;12;115;Minimum temperature at 2m, past 12 hours;K;2;0;16
+0;12;116;Maximum temperature at 2m, past 24 hours;K;2;0;16
+0;12;117;Minimum temperature at 2m, past 24 hours;K;2;0;16
+0;12;118;Maximum temperature at height specified, past 24 hours;K;2;0;16
+0;12;119;Minimum  temperature at height specified, past 24 hours;K;2;0;16
+0;12;130;Soil temperature;K;2;0;16
+0;12;151;Standard deviation of daily mean temperature;K;2;0;12
+0;12;152;Highest daily mean temperature;K;2;0;16
+0;12;153;Lowest daily mean temperature;K;2;0;16
+0;12;161;Skin temperature;K;2;0;16
+0;12;162;Equivalent black body temperature;K;2;0;16
+0;12;163;Brightness temperature;K;2;0;16
+0;12;164;Instrument temperature;K;2;0;16
+0;12;171;Coldest cluster temperature;K;2;0;16
+0;13;1;Specific humidity;kg kg-1;5;0;14
+0;13;2;Mixing ratio;kg kg-1;5;0;14
+0;13;3;Relative humidity;%;0;0;7
+0;13;4;Vapour pressure;Pa;-1;0;10
+0;13;5;Vapour density;kg m-3;3;0;7
+0;13;6;Mixing heights;m;-1;-40;16
+0;13;7;Minimum relative humidity;%;0;0;7
+0;13;8;Maximum relative humidity;%;0;0;7
+0;13;9;Relative humidity;%;1;-1000;12
+0;13;11;Total precipitation/total water equivalent;kg m-2;1;-1;14
+0;13;12;Depth of fresh snow;m;2;-2;12
+0;13;13;Total snow depth;m;2;-2;16
+0;13;14;Rainfall/water equivalent of snow (averaged rate);kg m-2 s-1;4;0;12
+0;13;15;Snowfall  (averaged rate);m s-1;7;0;12
+0;13;16;Precipitable water;kg m-2;0;0;7
+0;13;19;Total precipitation past 1 hour;kg m-2;1;-1;14
+0;13;20;Total precipitation past 3 hours;kg m-2;1;-1;14
+0;13;21;Total precipitation past 6 hours;kg m-2;1;-1;14
+0;13;22;Total precipitation past 12 hours;kg m-2;1;-1;14
+0;13;23;Total precipitation past 24 hours;kg m-2;1;-1;14
+0;13;31;Evapotranspiration;kg m-2;0;0;7
+0;13;32;Evaporation/evapotranspiration;kg m-2;1;0;8
+0;13;33;Evaporation/evapotranspiration;kg m-2;1;0;10
+0;13;38;Superadiabatic indicator;Code table;0;0;2
+0;13;39;Terrain type (ice/snow);Code table;0;0;3
+0;13;40;Surface flag;Code table;0;0;4
+0;13;41;Pasquill-Gifford stability category;Code table;0;0;4
+0;13;42;Parcel lifted index (to 500 hPa);K;0;-20;6
+0;13;43;Best lifted index (to 500 hPa);K;0;-20;6
+0;13;51;Frequency group, precipitation;Code table;0;0;4
+0;13;52;Highest daily amount of precipitation;kg m-2;1;-1;14
+0;13;55;Intensity of precipitation;Kg m-2 s-1;4;0;8
+0;13;58;Size of precipitating element;m;4;0;7
+0;13;59;Number of flashes (thunderstorm);Numeric;0;0;7
+0;13;60;Total accumulated precipitation;kg m-2;1;-1;17
+0;13;71;Upstream water level;m;2;0;14
+0;13;72;Downstream water level;m;2;0;14
+0;13;73;Maximum water level;m;2;0;14
+0;13;80;Water pH;pH unit;1;0;10
+0;13;81;Water conductivity;S m-1;3;0;14
+0;13;82;Water temperature;K;1;0;12
+0;13;83;Dissolved oxygen;kg m-3;6;0;15
+0;13;84;Turbidity;Lumen;0;0;14
+0;13;85;Oxydation Reduction Potential (ORP);V;3;0;14
+0;13;90;Radiometer water vapour content;kg m-2;1;0;10
+0;13;91;Radiometer liquid content;kg m-2;2;0;8
+0;14;1;Long-wave radiation, integrated over 24 hours;J m-2;-3;-2048;12
+0;14;2;Long-wave radiation, integrated over period specified;J m-2;-3;-2048;12
+0;14;3;Short-wave radiation, integrated over 24 hours;J m-2;-3;-2048;12
+0;14;4;Short-wave radiation, integrated over period specified;J m-2;-3;-2048;12
+0;14;11;Net long-wave radiation, integrated over 24 hours;J m-2;-3;-2048;12
+0;14;12;Net long-wave radiation, integrated over period specified;J m-2;-3;-2048;12
+0;14;13;Net short-wave radiation, integrated over 24 hours;J m-2;-3;-2048;12
+0;14;14;Net short-wave radiation, integrated over period specified;J m-2;-3;-2048;12
+0;14;15;Net radiation, integrated over 24 hours;J m-2;-4;-16384;15
+0;14;16;Net radiation, integrated over period specified;J m-2;-4;-16384;15
+0;14;17;Instantaneous long-wave radiation;W m-2;-3;-2048;12
+0;14;18;Instantaneous short-wave radiation;W m-2;-3;-2048;12
+0;14;19;Surface albedo;%;0;0;7
+0;14;20;Global solar radiation, integrated over 24 hours;J m-2;-4;0;15
+0;14;21;Global solar radiation, integrated over period specified;J m-2;-4;0;15
+0;14;22;Diffuse solar radiation, integrated over 24 hours;J m-2;-4;0;15
+0;14;23;Diffuse solar radiation, integrated over period specified;J m-2;-4;0;15
+0;14;24;Direct solar radiation, integrated over 24 hours;J m-2;-4;0;15
+0;14;25;Direct solar radiation, integrated over period specified;J m-2;-4;0;15
+0;14;26;Albedo at the top of clouds;%;0;0;7
+0;14;27;Albedo;%;0;0;7
+0;14;28;Global solar radiation (high accuracy), integrated over period specified;J m-2;-2;0;16
+0;14;29;Diffuse solar radiation (high accuracy), integrated over period specified;J m-2;-2;0;16
+0;14;30;Direct solar radiation (high accuracy), integrated over period specified;J m-2;-2;0;16
+0;14;31;Total sunshine;Minute;0;0;11
+0;14;32;Total sunshine;Hour;0;0;10
+0;14;33;Total sunshine;%;0;0;9
+0;14;34;Sunshine over period specified;Minute;0;0;11
+0;14;42;Bi-directional reflectance;%;0;0;7
+0;14;45;Channel radiance;Wm-2 sr-1 cm-1;0;0;11
+0;14;50;Emissivity (see note 5);%;1;0;10
+0;14;51;Direct solar radiation, integrated over last hour;J m-2;-3;0;14
+0;15;1;Total ozone;DU;0;0;10
+0;15;2;Air mass (slant path at 22 km);Numeric;2;0;10
+0;15;3;Measured ozone partial pressure (sounding);Pascal;4;0;9
+0;15;4;Ozone sounding correction factor;Numeric;3;0;11
+0;15;5;Ozone p;DU;0;0;10
+0;15;11;Log 10 of integrated electron density;log (1/m2);3;14000;13
+0;15;15;Maximum image spectral component before normalization;Numeric;0;0;31
+0;15;20;Integrated 03 density;kg m-2;8;0;21
+0;15;31;Atmospheric path delay in satellite signal;m;4;10000;15
+0;15;32;Estimated error in atmospheric path delay;m;4;0;10
+0;15;33;Difference in path delays for limb views at extremes of scan;m;5;-10000;15
+0;15;34;Estimated error in path delay difference;m;5;0;14
+0;15;35;Component of zenith path delay due to water vapour;m;4;0;14
+0;19;1;Type of synoptic feature;Code table;0;0;6
+0;19;2;Effective radius of feature;m;-2;0;12
+0;19;3;Wind speed threshold;m s-1;0;0;8
+0;19;4;Effective radius with respect to wind speeds above threshold;m;-2;0;12
+0;19;5;Direction of motion of feature;Degree true;0;0;9
+0;19;6;Speed of motion of feature;m s-1;2;0;14
+0;19;7;Effective radius of feature;m;-3;0;12
+0;19;8;Vertical extent of circulation;Code table;0;0;3
+0;19;9;Effective radius with respect to wind speeds above threshold (large storms);m;-3;0;12
+0;19;10;Method for tracking the centre of synoptic feature;Code table;0;0;4
+0;20;1;Horizontal visibility;m;-1;0;13
+0;20;2;Vertical visibility;m;-1;0;7
+0;20;3;Present weather (see note 1);Code table;0;0;9
+0;20;4;Past weather (1) (see note 2);Code table;0;0;5
+0;20;5;Past weather (2) (see note 2);Code table;0;0;5
+0;20;8;Cloud distribution for aviation;Code table;0;0;5
+0;20;9;General Weather Indicator (TAF/METAR);Code table;0;0;4
+0;20;10;Cloud cover (total);%;0;0;7
+0;20;11;Cloud amount;Code table;0;0;4
+0;20;12;Cloud type;Code table;0;0;6
+0;20;13;Height of base of cloud;m;-1;-40;11
+0;20;14;Height of top of cloud;m;-1;-40;11
+0;20;15;Pressure at base of cloud;Pa;-1;0;14
+0;20;16;Pressure at top of cloud;Pa;-1;0;14
+0;20;17;Cloud top description;Code table;0;0;4
+0;20;18;Tendency of runway visual range;Code table;0;0;2
+0;20;19;Significant present or forecast weather;CCITT IA5;0;0;72
+0;20;20;Significant recent weather phenomena;CCITT IA5;0;0;32
+0;20;21;Type of precipitation;Flag table;0;0;30
+0;20;22;Character of precipitation;Code table;0;0;4
+0;20;23;Other weather phenomena;Flag table;0;0;18
+0;20;24;Intensity of phenomena;Code table;0;0;3
+0;20;25;Obscuration;Flag table;0;0;21
+0;20;26;Character of obscuration;Code table;0;0;4
+0;20;27;Phenomena occurrence;Flag table;0;0;9
+0;20;29;Rain flag;Code table;0;0;2
+0;20;31;Ice deposit (thickness);m;2;0;7
+0;20;32;Rate of ice accretion;Code table;0;0;3
+0;20;33;Cause of ice accretion;Flag table;0;0;4
+0;20;34;Sea ice concentration;Code table;0;0;5
+0;20;35;Amount and type of ice;Code table;0;0;4
+0;20;36;Ice situation;Code table;0;0;5
+0;20;37;Ice development;Code table;0;0;5
+0;20;38;Bearing of ice edge (see note 3);Degree true;0;0;12
+0;20;39;Ice distance;m;-1;0;13
+0;20;41;Airframe icing;Code table;0;0;4
+0;20;42;Airframe icing present;Code table;0;0;2
+0;20;43;Peak liquid water content;kg m-3;4;0;7
+0;20;44;Average liquid water content;kg m-3;4;0;7
+0;20;45;Supercooled large droplet (SLD) conditions;Code table;0;0;2
+0;20;51;Amount of low clouds;%;0;0;7
+0;20;52;Amount of middle clouds;%;0;0;7
+0;20;53;Amount of high clouds;%;0;0;7
+0;20;61;Runway visual range (RVR);m;0;0;12
+0;20;62;State of the ground (with or without snow);Code table;0;0;5
+0;20;63;Special phenomena;Code table;0;0;10
+0;20;65;Snow cover (see note 4);%;0;0;7
+0;20;70;Minimum number of atmospherics;Numeric;0;0;7
+0;20;71;Accuracy of fix and rate of atmospherics;Code table;0;0;4
+0;20;81;Cloud amount in segment;%;0;0;7
+0;20;82;Amount segment cloud free;%;0;0;7
+0;20;90;Special clouds;Code table;0;0;4
+0;21;1;Horizontal reflectivity;dB;0;-64;7
+0;21;2;Vertical reflectivity;dB;0;-64;7
+0;21;3;Differential reflectivity;dB;1;-5;7
+0;21;5;Linear depolarisation ratio;dB;0;-65;6
+0;21;6;Circular depolarisation ratio;dB;0;-65;6
+0;21;11;Doppler mean velocity in X-direction;m s-1;0;-128;8
+0;21;12;Doppler mean velocity in Y-direction;m s-1;0;-128;8
+0;21;13;Doppler mean velocity in Z-direction;m s-1;0;-128;8
+0;21;14;Doppler mean velocity (radial);m s-1;1;-4096;13
+0;21;17;Doppler velocity spectral width;m s-1;1;0;8
+0;21;21;Echo tops;m;-3;0;4
+0;21;30;Signal to noise ratio;dB;0;-32;8
+0;21;31;Vertically integrated liquid-water content;kg m-2;0;0;7
+0;21;36;Radar rainfall intensity;m s-1;7;0;12
+0;21;41;Bright-band height;m;-2;0;8
+0;21;51;Signal power above 1 mW;dB;0;-256;8
+0;21;62;Backscatter;dB;2;-5000;13
+0;21;63;Radiometric resolution (noise value);%;1;0;10
+0;21;64;Clutter noise estimate;Numeric;0;0;8
+0;21;65;Missing packet counter;Numeric;0;-127;8
+0;21;66;Wave scatterometer product confidence data;Flag table;0;0;12
+0;21;67;Wind product confidence data;Flag table;0;0;13
+0;21;68;Radar altimeter product confidence data;Flag table;0;0;8
+0;21;69;SST product confidence data;Flag table;0;0;10
+0;21;70;SST product confidence data (SADIST-2);Flag table;0;0;23
+0;21;71;Peakiness;Numeric;0;0;16
+0;21;72;Satellite altimeter calibration status;Flag table;0;0;4
+0;21;73;Satelllite altimeter instrument mode;Flag table;0;0;9
+0;21;75;Image spectrum intensity;Numeric;0;0;8
+0;21;76;Representation of intensities;Code table;0;0;3
+0;21;77;Altitude correction (ionosphere);m;3;0;14
+0;21;78;Altitude correction (dry troposphere);m;3;0;9
+0;21;79;Altitude correction (wet troposphere);m;3;2000;10
+0;21;80;Altitude correction (calibration constant);m;3;0;11
+0;21;81;Open loop correction (height-time loop);m;3;0;10
+0;21;82;Open loop correction (auto gain control);dB;3;-3000;14
+0;21;83;Warm target calibration;Numeric;0;0;16
+0;21;84;Cold target calibration;Numeric;0;0;16
+0;21;85;ATSR sea surface temperature across- track band number;Numeric;0;0;4
+0;21;91;Radar signal Doppler spectrum 0th moment;dB;0;-100;8
+0;21;92;RASS signal Doppler spectrum 0th moment, referring to RASS signal;dB;0;-100;8
+0;21;101;Number of vector ambiguities;Numeric;0;0;3
+0;21;102;Index of selected wind vector;Numeric;0;0;3
+0;21;103;Total number of sigma-0 measurements;Numeric;0;0;5
+0;21;104;Likelihood computed for solution;Numeric;3;-30000;15
+0;21;105;Normalized radar cross-section;dB;2;-10000;14
+0;21;106;Kp variance coefficient (Alpha);Numeric;3;0;14
+0;21;107;Kp variance coefficient (Beta);Numeric;8;0;16
+0;21;109;SEAWINDS wind vector cell quality;Flag table;0;0;17
+0;21;110;Number of inner-beam Sigma-0 (forward of satellite);Numeric;0;0;6
+0;21;111;Number of outer-beam Sigma-0 (forward of satellite);Numeric;0;0;6
+0;21;112;Number of inner-beam Sigma-0 (aft of satellite);Numeric;0;0;6
+0;21;113;Number of outer-beam Sigma-0 (aft of satellite);Numeric;0;0;6
+0;21;114;Kp variance coefficent (Gamma);dB;3;-140000;18
+0;21;115;SEAWINDS sigma-0 quality;Flag table;0;0;17
+0;21;116;SEAWINDS sigma-0 mode;Flag table;0;0;17
+0;21;117;Sigma-0 variance quality control;Numeric;2;0;16
+0;21;118;Attenuation correction on sigma-0;dB;2;-10000;14
+0;21;119;Wind scatterometer geophysical model function;Code table;0;0;6
+0;21;120;Probability of rain;Numeric;3;0;10
+0;21;121;SEAWINDS NOF* rain index;Numeric;0;0;8
+0;21;122;Attenuation correction of sigma-0 (from tB);dB;2;-10000;14
+0;21;123;SEAWINDS normalized radar cross section;dB;2;-30000;15
+0;21;128;Number of valid points per second used to derive previous parameters;Numeric;0;0;8
+0;22;1;Direction of waves;Degree true;0;0;9
+0;22;2;Direction of wind waves;Degree true;0;0;9
+0;22;3;Direction of swell waves;Degree true;0;0;9
+0;22;4;Direction of current;Degree true;0;0;9
+0;22;11;Period of waves;s;0;0;6
+0;22;12;Period of wind waves;s;0;0;6
+0;22;13;Period of swell waves;s;0;0;6
+0;22;21;Height of waves;m;1;0;10
+0;22;22;Height of wind waves;m;1;0;10
+0;22;23;Height of swell waves;m;1;0;10
+0;22;25;Standard deviation wave height;m;2;0;10
+0;22;26;Standard deviation of significant wave height;m;2;0;10
+0;22;31;Speed of current;m s-1;2;0;13
+0;22;35;Tidal elevation with respect to local chart datum;m;2;0;14
+0;22;36;Meteorological residual tidal elevation (surge or offset);m;2;0;14
+0;22;37;Tidal elevation with respect to national land datum;m;3;-10000;15
+0;22;38;Tidal elevation with respect to local chart datum;m;3;-10000;15
+0;22;39;Meteorological residual tidal elevation (surge or offset);m;3;-5000;12
+0;22;40;Meteorological residual tidal elevation (surge or offset);m;3;-5000;14
+0;22;41;Sea-surface temperature (15-day running mean);K;1;0;12
+0;22;42;Sea/water temperature;K;1;0;12
+0;22;43;Sea/water temperature;K;2;0;15
+0;22;44;Sound velocity;m s-1;1;0;14
+0;22;45;Sea/water temperature;K;3;0;19
+0;22;50;Standard deviation sea-surface temperature;K;2;0;8
+0;22;55;Float cycle number;Numeric;0;0;10
+0;22;56;Direction of profile;Code table;0;0;2
+0;22;61;State of the sea;Code table;0;0;4
+0;22;62;Salinity;Part per thousand;2;0;14
+0;22;63;Total water depth;m;0;0;14
+0;22;64;Salinity;Part per thousand;3;0;17
+0;22;65;Water pressure;Pa;-3;0;17
+0;22;66;Water conductivity;S m-1;6;0;26
+0;22;67;Instrument type for water temperature profile measurement;Code table;0;0;10
+0;22;68;Water temperature profile recorder types;Code table;0;0;7
+0;22;70;Significant wave height;m;2;0;13
+0;22;71;Spectral peak wave period;s;1;0;9
+0;22;72;Spectral peak wave length;m;0;0;13
+0;22;73;Maximum wave height;m;2;0;13
+0;22;74;Average wave period;s;1;0;9
+0;22;75;Average wave length;m;0;0;13
+0;22;76;Direction from which dominant waves are coming;Degree true;0;0;9
+0;22;77;Directional spread of dominant wave;Degree;0;0;9
+0;22;78;Duration of wave record;s;0;0;12
+0;22;79;Length of wave record;m;0;0;16
+0;22;80;Waveband central frequency;Hz;3;0;10
+0;22;81;Waveband central wave number;m-1;5;0;13
+0;22;82;Maximum non-directional spectral wave density;m2 s;2;0;20
+0;22;83;Maximum non-directional spectral wave number;m3;2;0;20
+0;22;84;Band containing maximum non- directional spectral wave density;Numeric;0;0;7
+0;22;85;Spectral wave density ratio;Numeric;0;0;7
+0;22;86;Mean direction from which waves are coming;Degree true;0;0;9
+0;22;87;Principal direction from which waves are coming;Degree true;0;0;9
+0;22;88;First normalized polar coordinate from Fourier coefficients;Numeric;2;0;7
+0;22;89;Second normalized polar coordinate from Fourier coefficients;Numeric;2;0;7
+0;22;90;Non-directional spectral estimate by wave frequency;m2 s;2;0;20
+0;22;91;Non-directional spectral estimate by wave number;m3;2;0;20
+0;22;92;Directional spectral estimate by wave frequency;m2 rad-1 s;2;0;20
+0;22;93;Directional spectral estimate by wave number;m4;2;0;20
+0;22;94;Total number of wave bands;Numeric;0;0;7
+0;22;95;Directional spread of individual waves;Degree;0;0;8
+0;22;96;Spectral band width;s-1;3;0;4
+0;22;97;Mean wavelength > 731 m of image spectrum at low wave numbers;m;0;0;14
+0;22;98;Wavelength spread (wavelength > 731 m) at low wave numbers;m;0;0;14
+0;22;99;Mean direction at low wave numbers (wavelength > 731 m);Degree true;0;0;9
+0;22;100;Direction spread at low wave numbers(wavelength > 731 m);Degree;0;0;9
+0;22;101;Total energy (wavelength > 731m) at low wave numbers;Numeric;0;0;31
+0;22;120;Tide station automated water level check;Code table;0;0;5
+0;22;121;Tide station manual water level check;Code table;0;0;5
+0;22;122;Tide station automated meteorological data check;Code table;0;0;5
+0;22;123;Tide station manual meteorological data check;Code table;0;0;5
+0;22;141;Sea-surface temperature (15-day running mean);K;2;0;15
+0;23;1;Accident early notification - article applicable;Code table;0;0;3
+0;23;2;Activity or facility involved in incident;Code table;0;0;5
+0;23;3;Type of release;Code table;0;0;3
+0;23;4;Countermeasures taken near border;Code table;0;0;3
+0;23;5;Cause of incident;Code table;0;0;2
+0;23;6;Incident situation;Code table;0;0;3
+0;23;7;Characteristics of release;Code table;0;0;3
+0;23;8;State of current release;Code table;0;0;2
+0;23;9;State of expected release;Code table;0;0;2
+0;23;16;Possibility of significant chemical toxic health effect;Code table;0;0;2
+0;23;17;Flow discharge of major recipient;m3 s-1;6;0;20
+0;23;18;Release behaviour over time;Code table;0;0;3
+0;23;19;Actual release height;m;0;-15000;17
+0;23;21;Effective release height;m;0;-15000;17
+0;23;22;Distance of release point or site of incident;m;0;0;24
+0;23;23;Main transport speed in the atmosphere;m s-1;1;0;12
+0;23;24;Main transport speed in water;m s-1;2;0;13
+0;23;25;Main transport speed in ground water;m s-1;2;0;13
+0;23;27;Main transport direction in the atmosphere;Degree true;0;0;9
+0;23;28;Main transport direction in water;Degree true;0;0;9
+0;23;29;Main transport direction in ground water;Degree true;0;0;9
+0;23;31;Possibility that plume will encounter precipitation in State in which incident occurred;Code table;0;0;2
+0;23;32;Plume will encounter change in wind direction and/or speed flag;Code table;0;0;2
+0;24;1;Estimate of amount of radioactivity released up to specified time;Bq*;-11;0;28
+0;24;2;Estimated maximum potential release;Bq;-11;0;28
+0;24;3;Composition of release;Code table;0;0;5
+0;24;4;Element name;CCITT IA5;0;0;16
+0;24;5;Isotope mass;Numeric;0;0;9
+0;24;11;Dose;mSv*/**;2;0;32
+0;24;12;Trajectory dose (defined location and expected time of arrival);mSv;2;0;32
+0;24;13;Gamma dose in air along the main transport path (defined location and time period);mSv;2;0;32
+0;24;21;Air concentration (of named isotope type including gross beta);Bq m-3;2;0;32
+0;24;22;Concentration in precipitation (of names isotope type);Bq 1-1;2;0;32
+0;24;23;Pulse rate of beta radiation;s-1;1;0;14
+0;24;24;Pulse rate of gamma radiation;s-1;1;0;14
+0;25;1;Range-gate length;m;-1;0;6
+0;25;2;Number of gates averaged;Numeric;0;0;4
+0;25;3;Number of integrated pulses;Numeric;0;0;8
+0;25;4;Echo processing;Code table;0;0;2
+0;25;5;Echo integration;Code table;0;0;2
+0;25;6;Z to R conversion;Code table;0;0;3
+0;25;7;Z to R conversion factor;Numeric;0;0;12
+0;25;8;Z to R conversion exponent;Numeric;2;0;9
+0;25;9;Calibration method;Flag table;0;0;4
+0;25;10;Clutter treatment;Code table;0;0;4
+0;25;11;Ground occultation correction (screening);Code table;0;0;2
+0;25;12;Range attenuation correction;Code table;0;0;2
+0;25;13;Bright-band correction;Flag table;0;0;2
+0;25;14;Azimuth clutter cut-off (see Note 1);Numeric;0;0;12
+0;25;15;Radome attenuation correction;Flag table;0;0;2
+0;25;16;Clear-air attenuation correction;dB m-1;5;0;6
+0;25;17;Precipitation attenuation correction;Flag table;0;0;2
+0;25;18;A to Z law for attenuation factor;Numeric;7;0;6
+0;25;19;A to Z law for attenuation exponent;Numeric;2;0;7
+0;25;20;Mean speed estimation;Code table;0;0;2
+0;25;21;Wind computation enhancement;Flag table;0;0;8
+0;25;25;Battery voltage;V;1;0;9
+0;25;30;Running mean sea-surface temperature usage;Code table;0;0;2
+0;25;32;Wind profiler mode information*;Code table;0;0;2
+0;25;33;Wind profiler submode information*;Code table;0;0;2
+0;25;34;Wind profiler quality control test results*;Flag table;0;0;4
+0;25;36;Atmospherics location method;Code table;0;0;4
+0;25;40;CO2 wind product derivation;Code table;0;0;4
+0;25;41;Moving platform direction reporting method;Code table;0;0;2
+0;25;42;Moving platform speed reporting method;Code table;0;0;2
+0;25;43;Wave sampling interval (time);s;4;0;15
+0;25;44;Wave sampling interval (space);m;2;0;14
+0;25;45;HIRS channel combination;Flag table;0;0;21
+0;25;46;MSU channel combination;Flag table;0;0;5
+0;25;47;SSU channel combination;Flag table;0;0;4
+0;25;48;AMSU-A channel combination;Flag table;0;0;16
+0;25;49;AMSU-B channel combination;Flag table;0;0;6
+0;25;50;Principal component score;Numeric;4;-131072;18
+0;25;51;AVHRR channel combination;Flag table;0;0;7
+0;25;53;Observation quality;Flag table;0;0;12
+0;25;54;SSMIS Subframe ID nember;Numeric;0;0;5
+0;25;55;Multiplexer housekeeping;K;2;0;16
+0;25;60;Software identification (see Note 2);Numeric;0;0;14
+0;25;61;Software identification and version number;CCITT IA5;0;0;96
+0;25;65;Orientation correction (azimuth);Degree;2;-1000;11
+0;25;66;Orientation correction (elevation);Degree;2;-1000;11
+0;25;67;Radiosonde release point pressure correction;Pa;0;-8000;14
+0;25;68;Number of archive recomputes;Numeric;0;0;7
+0;25;69;Flight level pressure corrections;Flag table;0;0;8
+0;25;70;Major frame count;Numeric;0;0;4
+0;25;71;Frame count;Numeric;0;0;5
+0;25;75;Satellite antenna corrections version number;Numeric;0;0;5
+0;25;76;Log-10 of (Temperature-radiance central wave number) for ATOVS;Log m-1;8;0;30
+0;25;77;Bandwidth correction coefficient 1 for ATOVS;Numeric;5;-100000;18
+0;25;78;Bandwidth correction coefficient 2 for ATOVS;Numeric;5;0;17
+0;25;79;Albedo-radiance solar filtered irradiance for ATOVS;W m-2;4;0;24
+0;25;80;Albedo-radiance equivalent filter width for ATOVS;m;10;0;14
+0;25;85;Fraction of clear pixels in HIRS FOV;Numeric;0;0;7
+0;25;86;Depth correction indicator;Code table;0;0;2
+0;25;91;Structure constant of the refraction index (Cn2);dB;3;-18192;13
+0;25;92;Acoustic propagation velocity;m s-1;2;28000;14
+0;25;93;RASS computation correction;Flag table;0;0;8
+0;25;95;Altimeter state flag;Flag table;0;0;2
+0;25;96;Radiometer state flag;Flag table;0;0;5
+0;25;97;Three dimensional error estimate of the navigator orbit;Code table;0;0;4
+0;25;100;XBT/XCTD fall rate equation coefficient a;Numeric;5;0;20
+0;25;101;XBT/XCTD fall rate equation coefficient b;Numeric;5;-500000;21
+0;26;1;Principal time of daily reading in UTC of maximum temperature;Hour;1;0;12
+0;26;2;Principal time of daily reading in UTC of minimum temperature;Hour;1;0;12
+0;26;3;Time difference;Minute;0;-1440;12
+0;26;10;Hours included;Flag table;0;0;26
+0;26;20;Duration of precipitation;Minute;0;0;11
+0;27;1;Latitude (high accuracy);Degree;5;-9000000;25
+0;27;2;Latitude (coarse accuracy);Degree;2;-9000;15
+0;27;3;Alternate latitude (coarse accuracy);Degree;2;-9000;15
+0;27;4;Alternate latitude (high accuracy);Degree;5;-9000000;25
+0;27;20;Satellite location counter;Numeric;0;0;16
+0;27;21;Satellite sublocation dimension;Numeric;0;0;16
+0;27;31;In direction of 0 degrees longitude, distance from the Earth's centre;m;2;-1073741824;31
+0;28;1;Longitude (high accuracy);Degree;5;-18000000;26
+0;28;2;Longitude (coarse accuracy);Degree;2;-18000;16
+0;28;3;Alternate longitude (coarse accuracy);Degree;2;-18000;16
+0;28;4;Alternate longitude (high accuracy);Degree;5;-18000000;26
+0;28;31;In direction 90 degrees East, distance from the Earth's centre;m;2;-1073741824;31
+0;29;1;Projection type;Code table;0;0;3
+0;29;2;Co-ordinate grid type;Code table;0;0;3
+0;30;1;Pixel value (4 bits);Numeric;0;0;4
+0;30;2;Pixel value (8 bits);Numeric;0;0;8
+0;30;4;Pixel value (16 bits);Numeric;0;0;16
+0;30;21;Number of pixels per row;Numeric;0;0;12
+0;30;22;Number of pixels per column;Numeric;0;0;12
+0;30;31;Picture type;Code table;0;0;4
+0;30;32;Combination with other data;Flag table;0;0;16
+0;31;0;Short delayed descriptor replication factor;Numeric;0;0;1
+0;31;1;Delayed descriptor replication factor;Numeric;0;0;8
+0;31;2;Extended delayed descriptor replication factor;Numeric;0;0;16
+0;31;11;Delayed descriptor and data repetition factor;Numeric;0;0;8
+0;31;12;Extended delayed descriptor and data repetition factor;Numeric;0;0;16
+0;31;21;Associated field significance;Code table;0;0;6
+0;31;31;Data present indicator;Flag table;0;0;1
+0;33;1;Reserved;;;;0
+0;33;2;Quality information;Code table;0;0;2
+0;33;3;Quality information;Code table;0;0;3
+0;33;4;Reserved;;;;0
+0;33;5;Quality information (AWS data);Flag table;0;0;30
+0;33;6;Internal measurement status information (AWS);Code table;0;0;3
+0;33;7;Per cent confidence;%;0;0;7
+0;33;15;Data quality check indicator;Code table;0;0;6
+0;33;20;Quality control indication of following value;Code table;0;0;3
+0;33;21;Quality of following value;Code table;0;0;2
+0;33;22;Quality of buoy satellite transmission;Code table;0;0;2
+0;33;23;Quality of buoy location;Code table;0;0;2
+0;33;24;Station elevation quality mark (for mobile stations);Code table;0;0;4
+0;33;25;ACARS interpolated values;Code table;0;0;3
+0;33;26;Moisture quality;Code table;0;0;6
+0;33;27;Location quality class (range of radius of 66 % confidence);Code table;0;0;3
+0;33;30;Scan line status flags for ATOVS;Flag table;0;0;24
+0;33;31;Scan line quality flags for ATOVS;Flag table;0;0;24
+0;33;32;Channel quality flags for ATOVS;Flag table;0;0;24
+0;33;33;Field of view quality flags for ATOVS;Flag table;0;0;24
+0;33;35;Manual/automatic quality control;Code table;0;0;4
+0;33;36;Nominal confidence threshold;%;0;0;7
+0;33;37;Wind correlation error;Flag table;0;0;20
+0;33;38;Quality flags for ground-based GNSS data;Flag table;0;0;10
+0;33;40;Confidence interval;%;0;0;7
+0;33;41;Attribute of following value;Code table;0;0;2
+0;33;50;Global GTSPP quality flag;Code table;0;0;4
+0;35;0;FM and regional code number;Code table;0;0;10
+0;35;1;Time-frame for monitoring;Code table;0;0;3
+0;35;11;Number of reports actually received;Numeric;0;0;14
+0;35;21;Bulletin being monitored (TTAAii);CCITT IA5;0;0;48
+0;35;22;Bulletin being monitored (YYGGgg);CCITT IA5;0;0;48
+0;35;23;Bulletin being monitored (CCCC);CCITT IA5;0;0;32
+0;35;24;Bulletin being monitored (BBB);CCITT IA5;0;0;24
+0;35;30;Discrepancies in the availability of expected data;Code table;0;0;4
+0;35;31;Qualifier on monitoring results;Code table;0;0;7
+0;35;32;Cause of missing data;Code table;0;0;4
+0;35;33;Observation and collection deficiencies;Code table;0;0;7
+0;35;34;Statistical trends for availability of data (during the survey period(s));Code table;0;0;3
+0;35;35;Reason for termination;Code table;0;0;5
