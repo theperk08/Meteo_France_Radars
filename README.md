@@ -27,5 +27,19 @@ If you want to visualize the departements contours, you need to download shapefi
 https://www.data.gouv.fr/fr/datasets/contours-des-departements-francais-issus-d-openstreetmap/  
 (or find your own appropriate shapefile)
 
+---------
+> __Warning__:  
+The genuine bufr files from Meteo France were zipped under Linux :
+> the uncompression under windows doesn't work totally : you won't have the 6th message (advection) in the PAM files  
+> you must unzip under linux or find a good gzip tool like : https://sourceforge.net/projects/gzip-for-windows/?pk_campaign=badge&pk_source=vendor  
+> So, either you want to unzip with the python gzip (but you won't have the advection message for PAM files)
+> or you already correctly unzipped the bufr file,  
+> **you may change in the "def deco_bufr():" cell**  
+> respectively :  
+> **with gzip.open(FILE_PATH, 'rb') as infile:**  
+> or  
+> **with open(FILE_PATH, 'rb') as infile:** 
+---------
+
 ![reflecvity_example](examples/T_PAGF58_C_EODC_20240110195500_reflZ_PAG_dep.png)
 
